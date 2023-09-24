@@ -3,9 +3,14 @@
 import styles from "./styles/navigation.module.scss"
 import Link from "next/link"
 
-export default function Navigation() {
+interface Props {
+    showNavigation: boolean,
+  }
+
+export const Navigation: React.FC<Props> = (props) => {
+
     return (
-        <nav className={styles.navigation}>
+        <nav className={`${styles.navigation}  ${props.showNavigation ? styles.open : ""}`}>
             <Link href="/home">Home</Link>
             <Link href="/about">About</Link>
             <Link href="/projects">Projects</Link>

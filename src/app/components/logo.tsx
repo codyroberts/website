@@ -3,7 +3,7 @@
 import styles from "./styles/logo.module.scss"
 import Link from "next/link"
 
-export default function Logo() {
+export const Logo: React.FC = () => {
     return (
         <div className={styles.logo}>
             <svg className={styles.goblin} version="1.0" xmlns="http://www.w3.org/2000/svg" width="723px" height="652px" viewBox="0 0 723 652" preserveAspectRatio="xMidYMid meet">
