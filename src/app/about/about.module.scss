@@ -16,3 +16,9 @@
     font-size: xx-large;
     margin: 5%;
 }
+
+@media (max-width: 768px) {
+    .text {
+      font-size: larger;
+    }
+  }  
