@@ -4,19 +4,17 @@ body {
   margin: 0;
   padding: 0;
   overflow-x: hidden;
-  // background-color: black;
 }
 
 body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  place-items: center;
   min-height: 100vh;
   background: url('../../public/images/dungeon.png');
   background-size: cover;
   background-position: center;
-  // color: rgb(0, 0, 0);
-  // background: linear-gradient(
-  //     to bottom,
-  //     transparent,
-  //     rgb(255, 251, 0))
 }
 
 header {

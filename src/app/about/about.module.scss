@@ -1,0 +1,18 @@
+.about {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    height: 50%;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    opacity: 0.9;
+    backdrop-filter: blur(50px);
+    background: rgba(0, 0, 0, .1);
+}
+
+.text {
+    color: white;
+    font-size: xx-large;
+    margin: 5%;
+}
