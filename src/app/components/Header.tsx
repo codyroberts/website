@@ -16,9 +16,9 @@ export const Header: React.FC = () => {
     return (
         <header>
 
-        <Logo />
-        <MenuButton onClick={clickHandler} showNavigation = {showNavigation} />
-        <Navigation showNavigation = {showNavigation} />
+          <Logo />
+          <MenuButton onClick={clickHandler} showNavigation = {showNavigation} />
+          <Navigation showNavigation = {showNavigation} onNavigationClicked={clickHandler}/>
         
       </header>
     )

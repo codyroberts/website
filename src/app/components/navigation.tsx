@@ -5,16 +5,18 @@ import Link from "next/link"
 
 interface Props {
     showNavigation: boolean,
+    onNavigationClicked: () => void
   }
 
 export const Navigation: React.FC<Props> = (props) => {
 
+    let links = ["Home", "About", "Projects", "Contact"]
+
     return (
         <nav className={`${styles.navigation}  ${props.showNavigation ? styles.open : ""}`}>
-            <Link href="/home">Home</Link>
-            <Link href="/about">About</Link>
-            <Link href="/projects">Projects</Link>
-            <Link href="/contact">Contact</Link>
+            {links.map(link => (
+                <Link key={link} onClick = {props.onNavigationClicked} href={link.toLowerCase()}>{link}</Link>
+            ))}
         </nav>
     )
 }

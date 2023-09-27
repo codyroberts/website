@@ -10,15 +10,3 @@
     backdrop-filter: blur(50px);
     background: rgba(0, 0, 0, .1);
 }
-
-.text {
-    color: white;
-    font-size: xx-large;
-    margin: 5%;
-}
-
-@media (max-width: 768px) {
-    .text {
-      font-size: larger;
-    }
-  }  
