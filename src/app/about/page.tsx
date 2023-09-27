@@ -1,8 +1,14 @@
 import styles from './about.module.scss'
+import Image from 'next/image'
+import me from "../../../public/images/me.jpg"
 
 export default function Home() {
   return (
     <div className={styles.about}>
+      <Image 
+      className={styles.portrait}
+      src={me}
+      alt="It's me!" />
       <p className={styles.text}>
         Hello, my name's Cody! I'm a full stack engineer who recently graduated with a master's degree in Computer Science and Software Engineering from Auburn University.
         <br></br>

@@ -1,6 +1,6 @@
 'use client'
 
-import styles from "./styles/navigation.module.scss"
+import styles from "./navigation.module.scss"
 import Link from "next/link"
 
 interface Props {
@@ -10,7 +10,7 @@ interface Props {
 
 export const Navigation: React.FC<Props> = (props) => {
 
-    let links = ["Home", "About", "Projects", "Contact"]
+    const links = ["Projects", "About",  "Contact"]
 
     return (
         <nav className={`${styles.navigation}  ${props.showNavigation ? styles.open : ""}`}>

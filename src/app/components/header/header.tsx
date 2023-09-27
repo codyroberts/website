@@ -1,10 +1,10 @@
 'use client'
 
 import React, { useState } from "react";
-import styles from "./styles/Header.module.scss"
-import { Logo } from "./logo";
-import { MenuButton } from "./menuButton";
-import { Navigation } from "./navigation";
+import styles from "./header.module.scss"
+import { Logo } from "../logo/logo";
+import { MenuButton } from "../menuButton/menuButton";
+import { Navigation } from "../navigation/navigation";
 
 export const Header: React.FC = () => {
     const [showNavigation, setShowNavigation] = useState(false)
