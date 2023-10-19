@@ -1,3 +1,5 @@
+@use '../scss/variables.module.scss' as variables;
+
 .contact {
     display: flex;
     flex-direction: column;
@@ -11,4 +13,89 @@
     backdrop-filter: blur(50px);
     background: rgba(0, 0, 0, .1);
     text-align: center;
+}
+
+.text {
+    font-size: 2vw;
+    display: inline;
+    padding: 0;
+    margin: 0;
+    padding-bottom: 5vw;
+}
+
+.contactItem {
+  display: inline;
+  width: 100%;
+  padding: 1vw;
+}
+
+.contactLink{
+  display: inline;
+  margin: 0.8%;
+  text-decoration: none;
+  span{
+    color: variables.$accent-color;
+    font-weight: 100;
+    transition: all .5s;
+    border-bottom: 1px solid;
+  }
+  span:nth-child(2){
+    transition-delay: .1s;
+  }
+  span:nth-child(3){
+    transition-delay: .2s;
+  }
+  span:nth-child(4){
+    transition-delay: .3s;
+  }
+  span:nth-child(5){
+    transition-delay: .4s;
+  }
+  span:nth-child(6){
+    transition-delay: .5s;
+  }
+  span:nth-child(7){
+    transition-delay: .6s;
+  }
+  span:nth-child(8){
+    transition-delay: .7s;
+  }
+  span:nth-child(9){
+    transition-delay: .8s;
+  }
+
+  &:hover{
+    text-shadow: 1px 1px 0px #130B2F, 2px 2px 0px #130B2F, 3px 3px 0px #130B2F;
+    border-color: #130B2F;
+    span{
+      font-weight: 700;
+    }
+    span:nth-child(9){
+      transition-delay: .8s;
+    }
+    span:nth-child(8){
+      transition-delay: .7s;
+    }
+    span:nth-child(7){
+      transition-delay: .6s;
+    }
+    span:nth-child(6){
+      transition-delay: .5s;
+    }
+    span:nth-child(5){
+      transition-delay: .4s;
+    }
+    span:nth-child(4){
+      transition-delay: .3s;
+    }
+    span:nth-child(3){
+      transition-delay: .2s;
+    }
+    span:nth-child(2){
+      transition-delay: .1s;
+    }
+    span:nth-child(1){
+      transition-delay: 0s;
+    }
+  }
 }
