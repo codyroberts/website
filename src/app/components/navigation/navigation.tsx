@@ -10,7 +10,7 @@ interface Props {
 
 export const Navigation: React.FC<Props> = (props) => {
 
-    const links = ["Projects", "About",  "Contact"]
+    const links = ["Projects", "Contact"]
 
     return (
         <nav className={`${styles.navigation}  ${props.showNavigation ? styles.open : ""}`}>
